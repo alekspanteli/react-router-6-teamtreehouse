@@ -1,22 +1,30 @@
 import React from "react";
 
 const Header = () => (
-  <header>
-    <span className="icn-logo">
-      <i className="material-icons">code</i>
-    </span>
-    <ul className="main-nav">
+  <header className="flex items-center justify-between px-5 py-10 bg-gray-300 rounded-t-lg">
+    <a href="" className="uppercase font-bold">
+      Logo
+    </a>
+    <ul className="flex gap-4">
       <li>
-        <a href="#">Home</a>
+        <a href="#" className="font-medium">
+          Home
+        </a>
       </li>
       <li>
-        <a href="#">About</a>
+        <a href="#" className="font-medium">
+          About
+        </a>
       </li>
       <li>
-        <a href="#">Teachers</a>
+        <a href="#" className="font-medium">
+          Teachers
+        </a>
       </li>
       <li>
-        <a href="#">Courses</a>
+        <a href="#" className="font-medium">
+          Courses
+        </a>
       </li>
     </ul>
   </header>

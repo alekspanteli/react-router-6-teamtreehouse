@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div className="main-content home">
-      <h2>Front End Course Directory</h2>
+      <h2 className="text-3xl font-bold mb-6">Front End Course Directory</h2>
       <p>
         This fun directory is a project for the <em>React Router Basics</em>{" "}
         course on Treehouse.
@@ -19,7 +19,6 @@ const Home = () => {
         front end development. Our library is continually refreshed with the
         latest on web technology so you will never fall behind.
       </p>
-      <hr />
     </div>
   );
 };
