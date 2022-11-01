@@ -12,3 +12,9 @@
     @apply bg-[#5fcf80];
   }
 }
+
+/* @layer utilities {
+  .nav .active {
+    color: red;
+  }
+} */
