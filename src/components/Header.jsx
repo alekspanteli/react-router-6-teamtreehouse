@@ -30,24 +30,26 @@ const Header = () => {
             About
           </NavLink>
         </li>
-        {/* <li>
+        <li>
           <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            className={({ isActive }) =>
+              `font-bold ${isActive && "text-teal-500"}`
+            }
             to="teachers"
-            className="font-medium"
           >
             Teachers
           </NavLink>
         </li>
         <li>
           <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            className={({ isActive }) =>
+              `font-bold ${isActive && "text-teal-500"}`
+            }
             to="courses"
-            className="font-medium"
           >
             Courses
           </NavLink>
-        </li> */}
+        </li>
       </ul>
     </header>
   );
