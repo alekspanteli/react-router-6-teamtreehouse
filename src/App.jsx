@@ -7,6 +7,7 @@ import About from "./components/About";
 import Header from "./components/Header";
 import Teachers from "./components/Teachers";
 import Courses from "./components/Courses";
+import Featured from "./components/Featured";
 
 import { HTMLCourses, CSSCourses, JSCourses } from "./data/courses";
 import CourseContainer from "./components/courses/CourseContainer";
@@ -20,7 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="teachers" element={<Teachers />} />
+          <Route path="teachers">
+            <Route index element={<Teachers />} />
+            <Route path=":topic/:fname-:lname" element={<Featured />} />
+          </Route>
           <Route path="courses/" element={<Courses />}>
             <Route index element={<Navigate replace="true" to="html" />} />
             <Route

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
         front end development. Our library is continually refreshed with the
         latest on web technology so you will never fall behind.
       </p>
+
+      <h3>Featured Teachers</h3>
+      <Link to="teachers/HTML/Tommy-Wingo">Tommy Wingo</Link>
     </div>
   );
 };
