@@ -11,7 +11,9 @@ const Header = () => {
       <ul className="nav flex gap-4">
         <li>
           <NavLink
-            className={({ isActive }) => isActive && "text-teal-500"}
+            className={({ isActive }) =>
+              `font-bold ${isActive && "text-teal-500"}`
+            }
             to="/"
             end
           >
@@ -20,7 +22,9 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => isActive && "text-teal-500"}
+            className={({ isActive }) =>
+              `font-bold ${isActive && "text-teal-500"}`
+            }
             to="about"
           >
             About
