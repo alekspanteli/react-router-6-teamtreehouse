@@ -1,8 +1,8 @@
-import React from 'react';
-import Course from './Course';
-import { CSSCourses } from '../../data/courses';
+import React from "react";
+import Course from "./Course";
+import { CSSCourses } from "../../data/courses";
 
-const CSS = (props) => {
+const CSS = () => {
   let courses = CSSCourses.map((course) => {
     return (
       <Course
@@ -15,11 +15,9 @@ const CSS = (props) => {
   });
   return (
     <div>
-      <ul>
-        {courses}
-      </ul>
+      <ul className="grid gap-5">{courses}</ul>
     </div>
   );
-}
+};
 
 export default CSS;

@@ -1,8 +1,8 @@
-import React from 'react';
-import Course from './Course';
-import { HTMLCourses } from '../../data/courses';
+import React from "react";
+import Course from "./Course";
+import { HTMLCourses } from "../../data/courses";
 
-const HTML = (props) => {
+const HTML = () => {
   let courses = HTMLCourses.map((course) => {
     return (
       <Course
@@ -15,11 +15,9 @@ const HTML = (props) => {
   });
   return (
     <div>
-      <ul>
-        {courses}
-      </ul>
+      <ul className="grid gap-5">{courses}</ul>
     </div>
   );
-}
+};
 
 export default HTML;

@@ -1,9 +1,9 @@
 import React from "react";
 
 const Course = ({ img, title, desc }) => (
-  <li className="course media group">
-    <img className="course-img" src={img} alt="course" />
-    <div>
+  <li className="flex gap-10">
+    <img className="flex-none w-14 h-14" src={img} alt="course" />
+    <div className="grow">
       <h3>{title}</h3>
       <p>{desc}</p>
     </div>

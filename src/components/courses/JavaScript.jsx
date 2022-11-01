@@ -1,8 +1,8 @@
-import React from 'react';
-import Course from './Course';
-import { JSCourses } from '../../data/courses';
+import React from "react";
+import Course from "./Course";
+import { JSCourses } from "../../data/courses";
 
-const JavaScript = (props) => {
+const JavaScript = () => {
   let courses = JSCourses.map((course) => {
     return (
       <Course
@@ -15,11 +15,9 @@ const JavaScript = (props) => {
   });
   return (
     <div>
-      <ul>
-        {courses}
-      </ul>
+      <ul className="grid gap-5">{courses}</ul>
     </div>
   );
-}
+};
 
 export default JavaScript;
